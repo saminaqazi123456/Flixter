@@ -5,13 +5,12 @@ Flixter is an android app that allows users to browse movies from the [The Movie
 
 ---
 
-## Flix Part 1
+## Flixter Part 1
 
 ### User Stories
-`TODO://` In the **User Stories section below**, add an `x` in the `-[ ]` like this `- [x]` for any user story you complete. (🚫 Remove this paragraph after after checking off completed user stories)
 
 #### REQUIRED (10pts)
-- [ ] (10pts) User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
+- [X] (10pts) User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
 
 #### BONUS
 - [ ] (2pts) Views should be responsive for both landscape/portrait mode.
