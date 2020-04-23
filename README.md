@@ -21,9 +21,7 @@ Flixter is an android app that allows users to browse movies from the [The Movie
 
 ### App Walkthough GIF
 
-`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
-
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src='walkthrough2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /><br>
 
 ### Notes
 
@@ -53,7 +51,7 @@ Describe any challenges encountered while building the app.
 
 ### App Walkthough GIF
 
-<img src='walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
