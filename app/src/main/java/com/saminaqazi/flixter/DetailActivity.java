@@ -48,6 +48,7 @@ public class DetailActivity extends /*AppCompatActivity*/ YouTubeBaseActivity {
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
         ratingBar.setRating((float) movie.getRating());
+        final double rating = movie.getRating(); // to play immediately if rating > 5
 
         AsyncHttpClient client = new AsyncHttpClient();
 
@@ -61,7 +62,8 @@ public class DetailActivity extends /*AppCompatActivity*/ YouTubeBaseActivity {
                     }
                     String youtubeKey = results.getJSONObject(0).getString("key");
                     Log.d("DetailActivity", youtubeKey);
-                    initializeYoutube(youtubeKey);
+                    initializeYoutube(youtubeKey, rating);
+                    // initializeYoutube(youtubeKey, 1);  // testing with rating < 5
                 } catch (JSONException e) {
                     Log.d("DetailActivity", "Failed to parse JSON", e);
                     e.printStackTrace();
@@ -75,12 +77,17 @@ public class DetailActivity extends /*AppCompatActivity*/ YouTubeBaseActivity {
         });
     }
 
-    private void initializeYoutube(final String youtubeKey) {
+    private void initializeYoutube(final String youtubeKey, final double rating) {
         youTubePlayerView.initialize(YOUTUBE_API_KEY, new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 Log.d("DetailActivity", "onInitializationSuccess");
-                youTubePlayer.cueVideo(youtubeKey);
+                if (rating > 5) { // play immediately
+                    youTubePlayer.loadVideo(youtubeKey);
+                }
+                else {
+                    youTubePlayer.cueVideo(youtubeKey);
+                }
             }
 
             @Override
