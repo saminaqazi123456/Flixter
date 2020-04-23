@@ -23,8 +23,7 @@ Flixter is an android app that allows users to browse movies from the [The Movie
 
 ### App Walkthough GIF
 
-
-<img src="walkthrough.gif" width=250><br>
+<img src='walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### Notes
 Describe any challenges encountered while building the app.
