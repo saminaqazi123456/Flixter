@@ -1,4 +1,4 @@
-# Flixter
+# Flixter (Android Unit 1, Unit 2)
 Flixter is an android app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
 ## Flixter Part 2
